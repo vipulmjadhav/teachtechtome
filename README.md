@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Teachmetech
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# teachtechtome
+blogs on technology,programming
+>>>>>>> 796d95057ab5e713b5b4a00e639ef93483767c65

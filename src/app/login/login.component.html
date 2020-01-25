@@ -1,0 +1,30 @@
+<!-- <h2>{{title}}</h2> -->
+<!-- <p>{{getTitle()}}</p> -->
+
+<div class="container">
+    <div class="row justify-content-center">
+     <div class="col-4 mt-5">
+       <h2>Login</h2>
+       <form class="text-left" style="color: #757575;" [formGroup]="loginForm">
+                  <div class="md-form">  
+                      <input formControlName='email' type="email" id="materialLoginFormEmail" class="form-control">
+                      <label for="materialLoginFormEmail" [class.active]="loginForm.controls['email'].value">E-mail</label>
+                      <small class="text-danger" *ngIf="loginForm.controls['email'].hasError('required') && loginForm.controls['email'].touched">You must enter email.</small>
+                      <small class="text-danger" *ngIf="loginForm.controls['email'].hasError('email') && loginForm.controls['email'].touched">Please enter valid email</small>
+                  </div>
+                  <div class="md-form">
+                      <input formControlName='password' type="password" id="materialLoginFormPassword" class="form-control">
+                      <label for="materialLoginFormPassword" [class.active]="loginForm.controls['password'].value">Password</label>
+                      <small class="text-danger" *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched">You must enter password.</small>
+                  </div>
+                  <div class="md-form">
+                      <span>
+                      <button [disabled]="loading" class="btn btn-primary" style='margin-right:16px' button type="button" (click)="onLogin();">Login</button>
+                      <button [disabled]="loading" class="btn btn-primary" style='margin-right:16px' button type="button" (click)="onRegistration();">Registration</button>
+                      </span>
+                  </div>
+       </form>
+       </div>
+    </div>
+  </div>    
+  
